@@ -1,4 +1,4 @@
-import userData from "../userData.json";
+import userData from "./userData.json";
 
 export const User = () => {
   return (
