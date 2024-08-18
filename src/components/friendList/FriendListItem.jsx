@@ -16,27 +16,10 @@ const FriendList = ({ friends }) => {
   );
 };
 
-export default function FriendListItem() {
+export default function Friend() {
   return (
     <ul>
       <FriendList friends={friends} />
     </ul>
   );
 }
-
-FriendListItem;
-
-// export const FriendListItem = () => {
-//   return (
-//     <>
-//       <img src={friendList.avatar} alt="Avatar" width="48" />
-//       <p>{friendList.name}</p>
-//       <p>{friendList.name} is</p>
-//       {friendList.isOnline == true ? <p>on line</p> : <p>off line</p>}
-
-//       <FriendListItem friends={friendList} />
-//     </>
-//   );
-// };
-
-// export default FriendListItem;
