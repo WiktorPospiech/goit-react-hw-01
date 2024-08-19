@@ -1,25 +1,30 @@
 import userData from "./userData.json";
+import styles from "./profile.module.css";
 
 export const User = () => {
   return (
-    <div>
-      <div>
-        <img src={userData.avatar} alt="User avatar" />
-        <p>{userData.username}</p>
-        <p>{userData.tag}</p>
-        <p>{userData.location}</p>
+    <div className={styles.profile}>
+      <div className={styles.description}>
+        <img
+          src={userData.avatar}
+          alt="User avatar"
+          className={styles.avatar}
+        />
+        <p className={styles.name}>{userData.username}</p>
+        <p className={styles.tag}>{userData.tag}</p>
+        <p className={styles.location}>{userData.location}</p>
       </div>
 
-      <ul>
-        <li>
+      <ul className={styles.stats}>
+        <li className={styles.statsItems}>
           <span>Followers</span>
           <span>{userData.stats.followers}</span>
         </li>
-        <li>
+        <li className={styles.statsItems}>
           <span>Views</span>
           <span>{userData.stats.views}</span>
         </li>
-        <li>
+        <li className={styles.statsItems}>
           <span>Likes</span>
           <span>{userData.stats.likes}</span>
         </li>

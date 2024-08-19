@@ -23,7 +23,11 @@
   font-size: 18px;
 }
 .stats {
-  padding: 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: black;
+  padding-top: 15px;
+  padding-left: 0px;
   font-size: 18px;
   list-style: none;
   display: flex;
@@ -33,4 +37,5 @@
 .statsItems {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }

@@ -1,4 +1,5 @@
 import transactions from "./transactions.json";
+import styles from "./transactions.module.css";
 
 const TransactionHistory = ({ transactions }) => {
   return (
@@ -20,7 +21,7 @@ const TransactionHistory = ({ transactions }) => {
 
 export default function Transaction() {
   return (
-    <table>
+    <table className={styles.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>
